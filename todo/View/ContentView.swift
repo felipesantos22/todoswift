@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import SwiftData // Certifique-se de importar o SwiftData para o contexto
+import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var context
@@ -60,5 +60,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: Task.self, inMemory: true)
 }
