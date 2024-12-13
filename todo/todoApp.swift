@@ -14,6 +14,6 @@ struct todoApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: [Task.self]) // Adiciona o modelo SwiftData
+        .modelContainer(for: [TaskModel.self]) 
     }
 }
