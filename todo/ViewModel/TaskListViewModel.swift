@@ -26,7 +26,7 @@ class TaskListViewModel: ObservableObject {
     
     func deleteItem(_ task: TaskModel, context: ModelContext) {
         context.delete(task)
-        tasks.removeAll { $0.id == task.id }
+        try? context.save()
     }
     
     func editTask(_ task: TaskModel, newItem: String) {
