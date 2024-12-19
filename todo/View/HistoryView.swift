@@ -43,3 +43,7 @@ struct HistoryView: View {
         .padding()
     }
 }
+
+#Preview {
+    HistoryView()
+}
